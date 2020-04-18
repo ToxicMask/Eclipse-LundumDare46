@@ -279,6 +279,7 @@ GameObject:
   - component: {fileID: 8567627384042179360}
   - component: {fileID: 8567627384042179367}
   - component: {fileID: 8567627384042179361}
+  - component: {fileID: 5305199587611759767}
   m_Layer: 0
   m_Name: Astro
   m_TagString: Player
@@ -364,3 +365,16 @@ MonoBehaviour:
   rb2D: {fileID: 0}
   linearVelocity: {x: 0, y: 0}
   debugMode: 0
+--- !u!114 &5305199587611759767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8567627384042179363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f990510c4e89784f8f7b95e91b4214a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentChipChips: 0

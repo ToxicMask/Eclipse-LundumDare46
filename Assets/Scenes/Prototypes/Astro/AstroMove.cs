@@ -5,7 +5,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
 
-public class AstroChar : MonoBehaviour
+public class AstroMove : MonoBehaviour
 {
     // Components
     [SerializeField] Rigidbody2D rb2D;
