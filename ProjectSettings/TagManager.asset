@@ -41,3 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: LightFX
+    uniqueID: 874664313
+    locked: 0
+  - name: LightMark
+    uniqueID: 1801870549
+    locked: 0
