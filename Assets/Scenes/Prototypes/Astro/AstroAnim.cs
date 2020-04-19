@@ -11,7 +11,7 @@ public class AstroAnim : MonoBehaviour
     [SerializeField] Animator anim;
 
     // Accel Parameter
-    public Vector2 vectorAccel = Vector2.down;
+    public Vector2 vectorFront = Vector2.down;
 
 
     // Start is called before the first frame update
@@ -21,20 +21,16 @@ public class AstroAnim : MonoBehaviour
         anim = GetComponent<Animator>();   
     }
 
-    private void Update()
-    {
-        UpdateAnimation();
-    }
 
     // Update is called once per frame
-    void UpdateAnimation()
+    public void UpdateMoveAnimation()
     {
         // Do nothing if anim is Null
         if (anim == null) return;
 
         //Update Movement
-        anim.SetFloat("moveX", vectorAccel.x);
-        anim.SetFloat("moveY", vectorAccel.y);
+        anim.SetFloat("moveX", vectorFront.x);
+        anim.SetFloat("moveY", vectorFront.y);
 
     }
 }

@@ -15,13 +15,13 @@ public class AstroMove : MonoBehaviour
     [SerializeField] bool debugMode = false;
 
     float floatAccel = 4;
-    float floatDamp = 1;
+    float floatDamp = 0.4f;
 
-    float maxSpeed = 96;
+    float maxSpeed = 128;
     float minSpeed = 4;
 
     // Input Variables
-    Vector2 inputVector;
+    public Vector2 inputVector;
 
 
     private void Start()
@@ -29,23 +29,14 @@ public class AstroMove : MonoBehaviour
         // Auto get
         rb2D = GetComponent<Rigidbody2D>();
 
-        // Reset Var
+        // Reset Variables
         linearVelocity = Vector2.zero;
 
         inputVector = Vector2.zero;
     }
 
-    // Update is called once per frame
-    private void Update()
-    {
-        // Get Input
-        inputVector = (new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"))).normalized ;
-
-    }
-
     private void FixedUpdate()
     {
-
         // Standard Movement
         FloatMovement();
     }
