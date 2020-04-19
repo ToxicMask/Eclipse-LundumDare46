@@ -2,8 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class ShipChip : PickableObject
 {
+
+    public static List<ShipChip> allInstances = new List<ShipChip>();
+
+    private void Awake()
+    {
+        // Add instance
+        allInstances.Add(this);
+    }
+
+    private void OnDestroy()
+    {
+        allInstances.Remove(this);
+    }
+
     protected override void OnTriggerEnter2D(Collider2D collision)
     {
         // Ends if is not Player
