@@ -6,6 +6,8 @@ using UnityEngine;
 public class ShipChip : PickableObject
 {
 
+    public static float airIncrease = 20;
+
     public static List<ShipChip> allInstances = new List<ShipChip>();
 
     private void Awake()
@@ -24,17 +26,27 @@ public class ShipChip : PickableObject
         // Ends if is not Player
         if (!collision.gameObject.CompareTag("Player")) return;
 
-        // Searches for inventory
+        // Searches for inventory / Air Health
         AstroInv astroInv = collision.gameObject.GetComponent<AstroInv>();
+        AstroHealth astroAir = collision.gameObject.GetComponent<AstroHealth>();
 
         // Picks if is not null
-        if (astroInv != null) {
+        if (astroInv != null)
+        {
             // Put in inventory
             astroInv.AddChip();
-
-            // Ends Chip
-            Destroy(gameObject);
         }
 
+        if (astroAir != null)
+        {
+            // Increase Max By
+            astroAir.IncreaseMaxAir(airIncrease);
+
+            // Increase Air Upgrade
+            airIncrease += 10;
+        }
+
+        // Ends Chip
+        Destroy(gameObject);
     }
 }

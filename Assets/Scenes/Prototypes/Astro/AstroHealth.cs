@@ -7,7 +7,7 @@ public class AstroHealth : MonoBehaviour
 {
     [SerializeField] float maxAir = 100f;
     [SerializeField] float playerAir = 100f;
-    [SerializeField] float loseAir = 1f;
+    [SerializeField] float loseAir = 4f;
 
     // Ui Component
     public AirSupplyUI airUI;
@@ -35,6 +35,8 @@ public class AstroHealth : MonoBehaviour
         // Update UI
         airUI.SetAir(playerAir);
 
+        Debug.Log(playerAir);
+
         // Check for Death
         if (playerAir < 0) Death();
     }
@@ -53,6 +55,9 @@ public class AstroHealth : MonoBehaviour
     {
         maxAir += plusValue;
         RestoreAir();
+
+        // Update UI
+        airUI.SetMaxAir(maxAir);
     }
 
     void Death()

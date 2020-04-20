@@ -22,7 +22,11 @@ public class AirSupplyUI : MonoBehaviour
         airSlider.maxValue = newMax;
         airSlider.value = newMax;
 
+        // Set Color
         if (fill != null) { fill.color = gradient.Evaluate(1f); }
+
+        // Set Size
+        airSlider.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, newMax);
     }
 
     public void SetAir (float newValue)
