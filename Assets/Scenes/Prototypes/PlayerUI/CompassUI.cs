@@ -18,7 +18,7 @@ public class CompassUI : MonoBehaviour
     {
 
         // Auto Get
-        compassTransform = GetComponent<RectTransform>();
+        if (compassTransform == null) compassTransform = GetComponent<RectTransform>();
         
     }
 

@@ -18,6 +18,7 @@ public class RadarUI : MonoBehaviour
     private void Start()
     {
         // Auto Get
+        astroInventory = GameObject.FindGameObjectWithTag("Player").GetComponent<AstroInv>();
         radarAnimator = GetComponent<Animator>();
         audioBlink = GetComponent<AudioSource>();
     }
