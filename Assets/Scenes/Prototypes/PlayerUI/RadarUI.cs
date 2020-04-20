@@ -1,31 +1,51 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RadarUI : MonoBehaviour
 {
     // To verify chip distance, and upgrades
     public AstroInv astroInventory;
 
-    // Start is called before the first frame update
-    void Start()
-    {
+    // To notify distance
+    public Animator radarAnimator;
 
+    public AnimationCurve radarFrequencyCurve;
+
+    private void Start()
+    {
+        // Auto Get
+        radarAnimator = GetComponent<Animator>();
     }
+
 
     // Update is called once per frame
     void Update()
     {
-
-        if (astroInventory == null) return;
+        // Dont execute
+        if (astroInventory == null || radarAnimator == null) return;
 
         // Count 
         if (ShipChip.allInstances.Count > 0)
         {
             float nearestDistance = GetNearestTargetDistance();
 
-            Debug.Log(nearestDistance);
+            float radarFrequency = radarFrequencyCurve.Evaluate(nearestDistance);
+
+
+            radarAnimator.SetBool("Detected", (radarFrequency != 0));
+
+            //Set Frequency
+
+            if (radarFrequency != 0) { radarAnimator.speed = radarFrequency; }
+            else { radarAnimator.speed = 1; }
+
+
+            Debug.Log(radarFrequency);
         } 
+
+
         else
         {
             Debug.Log("Done");

@@ -33,9 +33,7 @@ public class CompassUI : MonoBehaviour
 
         float angle2Rocket =  Mathf.Rad2Deg * (Mathf.Atan2(angleVector.y, angleVector.x));
 
-        float angleCorrect = -90f;
-
-        compassTransform.rotation = Quaternion.Euler(0, 0, angle2Rocket - angleCorrect);
+        compassTransform.rotation = Quaternion.Euler(0, 0, angle2Rocket);
 
     }
 
