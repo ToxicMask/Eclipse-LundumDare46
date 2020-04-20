@@ -45,7 +45,7 @@ public class RadarUI : MonoBehaviour
             else { radarAnimator.speed = 1; }
 
 
-            Debug.Log(radarFrequency);
+            //Debug.Log(radarFrequency);
         } 
 
 
