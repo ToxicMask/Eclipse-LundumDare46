@@ -49,6 +49,12 @@ public class AstroHealth : MonoBehaviour
         playerAir -= loseAir * Time.deltaTime;
     }
 
+    public void IncreaseMaxAir(float plusValue)
+    {
+        maxAir += plusValue;
+        RestoreAir();
+    }
+
     void Death()
     {
         Debug.LogWarning("Player Death");

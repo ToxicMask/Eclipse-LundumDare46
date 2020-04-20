@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SpaceShip : MonoBehaviour, IPlayerCanCheck
+public class SpaceShip : AirSupply
 {
 
     [SerializeField] int minChipNumber = 5;
@@ -15,9 +15,14 @@ public class SpaceShip : MonoBehaviour, IPlayerCanCheck
         if (ShipChip.allInstances.Count < minChipNumber) minChipNumber = ShipChip.allInstances.Count;
     }
 
-    public void Check(GameObject player)
+    public override void Check(GameObject player)
     {
         Debug.Log("Checked");
+
+        //Refil Air
+        base.Check(player);
+
+        // Check Progress
         CheckPlayerProgress(player);
     }
 
