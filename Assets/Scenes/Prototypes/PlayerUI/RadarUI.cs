@@ -13,10 +13,13 @@ public class RadarUI : MonoBehaviour
 
     public AnimationCurve radarFrequencyCurve;
 
+    public AudioSource audioBlink;
+
     private void Start()
     {
         // Auto Get
         radarAnimator = GetComponent<Animator>();
+        audioBlink = GetComponent<AudioSource>();
     }
 
 
@@ -73,6 +76,11 @@ public class RadarUI : MonoBehaviour
 
 
         return nearestDistance;
+    }
+
+    public void PlayRadarAudio()
+    {
+        audioBlink.Play();
     }
 
 }

@@ -790,6 +790,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  audioBlink: {fileID: 0}
 --- !u!95 &1929272783
 Animator:
   serializedVersion: 3
@@ -819,12 +820,12 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 7cf676382258a9c439392d954df60c30, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 244538ed35f5c6b4498b03ddd02caa5e, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
+  m_Volume: 0.7
+  m_Pitch: 0.4
   Loop: 0
-  Mute: 1
+  Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
