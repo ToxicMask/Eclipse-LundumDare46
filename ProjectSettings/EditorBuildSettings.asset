@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Prototypes/Astro/PlayerTest.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/Prototypes/CompassTest.unity
+    guid: 9f1ae61aee6313d4aa27428c32883ffd
   m_configObjects: {}
