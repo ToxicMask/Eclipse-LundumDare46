@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class AstroHealth : MonoBehaviour
 {
-    [SerializeField] float maxAir = 100f;
-    [SerializeField] float playerAir = 100f;
+    [SerializeField] float maxAir = 80f;
+    [SerializeField] float playerAir = 80f;
     [SerializeField] float loseAir = 4f;
 
     // Ui Component
@@ -35,7 +35,7 @@ public class AstroHealth : MonoBehaviour
         // Update UI
         airUI.SetAir(playerAir);
 
-        Debug.Log(playerAir);
+        //Debug.Log(playerAir);
 
         // Check for Death
         if (playerAir < 0) Death();

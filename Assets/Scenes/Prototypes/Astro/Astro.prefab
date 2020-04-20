@@ -697,8 +697,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dd6f0e04bc83be439ccfe46d85e86ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxAir: 100
-  playerAir: 100
+  maxAir: 80
+  playerAir: 80
   loseAir: 4
   airUI: {fileID: 0}
 --- !u!114 &8567627384042179361

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Collision2D))]
 public abstract class AirSupply : MonoBehaviour, IPlayerCanCheck
 {
 

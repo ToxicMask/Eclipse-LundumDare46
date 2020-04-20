@@ -9,7 +9,7 @@ public class AstroCheck : MonoBehaviour
     {
         Debug.Log("!");
         // Temp -> Get Collision trough circle
-        Collider2D[] collisionArray = Physics2D.OverlapCircleAll(transform.position, 2.5f);
+        Collider2D[] collisionArray = Physics2D.OverlapCircleAll(transform.position, .75f);
 
         // Check all collisions
         foreach (Collider2D collider in collisionArray)
