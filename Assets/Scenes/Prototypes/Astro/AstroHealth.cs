@@ -9,6 +9,8 @@ public class AstroHealth : MonoBehaviour
     [SerializeField] float playerAir = 100f;
     [SerializeField] float loseAir = 1f;
 
+    // Ui Component
+
     // Start is called before the first frame update
     void Start()
     {

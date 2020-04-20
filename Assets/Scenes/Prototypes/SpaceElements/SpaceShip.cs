@@ -8,6 +8,13 @@ public class SpaceShip : MonoBehaviour, IPlayerCanCheck
 
     [SerializeField] int minChipNumber = 5;
 
+
+    private void Start()
+    {
+        // Equalize if less is present
+        if (ShipChip.allInstances.Count < minChipNumber) minChipNumber = ShipChip.allInstances.Count;
+    }
+
     public void Check(GameObject player)
     {
         Debug.Log("Checked");
@@ -31,7 +38,7 @@ public class SpaceShip : MonoBehaviour, IPlayerCanCheck
 
    protected void PlayerVictory()
     {
-        Debug.Log("Victory");
+        Debug.LogWarning("Victory");
         Application.Quit();
     }
 

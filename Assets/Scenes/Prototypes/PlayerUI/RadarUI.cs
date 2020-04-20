@@ -47,13 +47,13 @@ public class RadarUI : MonoBehaviour
 
 
             //Debug.Log(radarFrequency);
-        } 
-
+        }
 
         else
         {
-            Debug.Log("Done");
-            Destroy(gameObject);
+            // Deactivate this radar
+            radarAnimator.SetBool("Detected", (false));
+            radarAnimator.speed = 1;
         }
     }
 
