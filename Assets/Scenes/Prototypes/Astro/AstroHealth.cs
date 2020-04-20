@@ -10,11 +10,20 @@ public class AstroHealth : MonoBehaviour
     [SerializeField] float loseAir = 1f;
 
     // Ui Component
+    public AirSupplyUI airUI;
 
     // Start is called before the first frame update
     void Start()
     {
-        RestoreAir();
+        // Auto Get
+
+        airUI = GameObject.FindGameObjectWithTag("PlayerUI").GetComponentInChildren<AirSupplyUI>();
+
+        // Set to max
+        playerAir = maxAir;
+
+        // Config Air UI
+        airUI.SetMaxAir(playerAir);
     }
 
     // Update is called once per frame
@@ -22,6 +31,9 @@ public class AstroHealth : MonoBehaviour
     {
         // Lose Air
         LoseAir();
+
+        // Update UI
+        airUI.SetAir(playerAir);
 
         // Check for Death
         if (playerAir < 0) Death();
