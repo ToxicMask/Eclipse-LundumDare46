@@ -18,7 +18,7 @@ public class SpaceShip : AirSupply
 
     public override void Check(GameObject player)
     {
-        Debug.Log("Checked");
+        //Debug.Log("Checked");
 
         //Refil Air
         base.Check(player);

@@ -16,7 +16,7 @@ public abstract class AirSupply : MonoBehaviour, IPlayerCanCheck
     public virtual void Check(GameObject player)
     {
 
-        Debug.Log("Refil O2");
+        //Debug.Log("Refil O2");
 
         AstroHealth airHealth = player.GetComponent<AstroHealth>();
 
