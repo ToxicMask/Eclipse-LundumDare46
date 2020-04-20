@@ -7,21 +7,19 @@ using TMPro;
 public class ChipCounterUI : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI textCounter;
-    public AstroInv astroInv;
 
     // Start is called before the first frame update
     void Start()
     {
         // Auto Get
         textCounter = GetComponentInChildren<TextMeshProUGUI>();
-        astroInv = GameObject.FindGameObjectWithTag("Player").GetComponent<AstroInv>();
     }
 
     // Update is called once per frame
-    void Update()
+    public void UpdateChipValue(int newValue)
     {
-        if (astroInv == null || textCounter == null) return;
+        if (textCounter == null) return;
 
-        textCounter.text = astroInv.currentShipChips.ToString();
+        textCounter.text = newValue.ToString();
     }
 }

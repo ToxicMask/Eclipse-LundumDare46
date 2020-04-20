@@ -30,7 +30,7 @@ public class ShipChip : PickableObject
         // Picks if is not null
         if (astroInv != null) {
             // Put in inventory
-            astroInv.currentShipChips++;
+            astroInv.AddChip();
 
             // Ends Chip
             Destroy(gameObject);

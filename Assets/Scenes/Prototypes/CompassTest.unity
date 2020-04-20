@@ -299,7 +299,7 @@ GameObject:
   - component: {fileID: 784392589}
   m_Layer: 5
   m_Name: PlayerUI
-  m_TagString: Untagged
+  m_TagString: PlayerUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1448,7 +1448,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textCounter: {fileID: 0}
-  astroInv: {fileID: 0}
 --- !u!1001 &6119257776603627912
 PrefabInstance:
   m_ObjectHideFlags: 0

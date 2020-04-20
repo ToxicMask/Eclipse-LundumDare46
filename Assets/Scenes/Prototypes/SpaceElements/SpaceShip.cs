@@ -23,7 +23,7 @@ public class SpaceShip : MonoBehaviour, IPlayerCanCheck
         if (astroInv != null)
         {
             // Check Victory
-            if (astroInv.currentShipChips >= minChipNumber) PlayerVictory();
+            if (astroInv.GetChipCount()>= minChipNumber) PlayerVictory();
             
         }
 
