@@ -312,8 +312,9 @@ GameObject:
   - component: {fileID: 6359840853065706600}
   - component: {fileID: 8963330192887821875}
   - component: {fileID: 1614308135520532295}
-  - component: {fileID: 8567627384042179361}
   - component: {fileID: 5305199587611759767}
+  - component: {fileID: 8281634035837349227}
+  - component: {fileID: 8567627384042179361}
   m_Layer: 0
   m_Name: Astro
   m_TagString: Player
@@ -482,6 +483,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38cc584bdcfbd0142b78e2f59ad7d079, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5305199587611759767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8567627384042179363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f990510c4e89784f8f7b95e91b4214a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentShipChips: 0
+  counterUI: {fileID: 0}
+--- !u!114 &8281634035837349227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8567627384042179363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dd6f0e04bc83be439ccfe46d85e86ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerAir: 100
+  loseAir: 1
 --- !u!114 &8567627384042179361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -498,16 +527,3 @@ MonoBehaviour:
   linearVelocity: {x: 0, y: 0}
   debugMode: 0
   inputVector: {x: 0, y: 0}
---- !u!114 &5305199587611759767
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8567627384042179363}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f990510c4e89784f8f7b95e91b4214a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentShipChips: 0
