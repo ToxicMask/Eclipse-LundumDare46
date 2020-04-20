@@ -48,3 +48,6 @@ TagManager:
   - name: LightMark
     uniqueID: 1801870549
     locked: 0
+  - name: Astro
+    uniqueID: 3685224225
+    locked: 0

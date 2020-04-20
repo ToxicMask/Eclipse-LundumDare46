@@ -26,8 +26,10 @@ public class AstroMove : MonoBehaviour
 
     private void Start()
     { 
+
         // Auto get
         rb2D = GetComponent<Rigidbody2D>();
+
 
         // Reset Variables
         linearVelocity = Vector2.zero;
