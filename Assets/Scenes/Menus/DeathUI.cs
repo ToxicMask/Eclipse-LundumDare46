@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class StartMenuUI : MonoBehaviour
+public class DeathUI : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -11,17 +11,13 @@ public class StartMenuUI : MonoBehaviour
         
     }
 
-    
-    public void NewGame()
+    public void TryAgain()
     {
-        Debug.Log("@");
-        SceneManager.LoadScene("Tutorial");
+        SceneManager.LoadScene("FinalLevel");
     }
-
 
     public void Exit()
     {
-        Debug.Log("#");
         Application.Quit();
     }
 }

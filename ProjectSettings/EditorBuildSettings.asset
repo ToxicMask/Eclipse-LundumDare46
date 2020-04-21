@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Prototypes/CompassTest.unity
-    guid: 9f1ae61aee6313d4aa27428c32883ffd
+    path: Assets/Scenes/Menus/StartMenu.unity
+    guid: b0d3fb67c31176742a27a126d8f8bc85
+  - enabled: 1
+    path: Assets/Scenes/Menus/Tutorial.unity
+    guid: e930112c0ba7b674995052a692ed96a1
+  - enabled: 1
+    path: Assets/Scenes/Level/FinalLevel.unity
+    guid: d1924c28e07e4f54cb30eceb243a4eee
+  - enabled: 1
+    path: Assets/Scenes/Menus/DeathScene.unity
+    guid: 32b6b37b927b6fd4085a9609906958e5
+  - enabled: 1
+    path: Assets/Scenes/Menus/VictoryScene.unity
+    guid: ba24295e66f73d341974487d2c12a2cb
   m_configObjects: {}

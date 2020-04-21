@@ -3,25 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class StartMenuUI : MonoBehaviour
+public class VictoryUI : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
-    
-    public void NewGame()
+    public void TryAgain()
     {
-        Debug.Log("@");
-        SceneManager.LoadScene("Tutorial");
+        SceneManager.LoadScene("StartMenu");
     }
-
 
     public void Exit()
     {
-        Debug.Log("#");
         Application.Quit();
     }
 }

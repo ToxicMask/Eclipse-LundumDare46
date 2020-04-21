@@ -63,6 +63,6 @@ public class AstroHealth : MonoBehaviour
     void Death()
     {
         Debug.LogWarning("Player Death");
-        Application.Quit();
+        SceneManager.LoadScene("DeathScene");
     }
 }

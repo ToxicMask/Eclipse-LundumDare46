@@ -44,8 +44,7 @@ public class SpaceShip : AirSupply
 
    protected void PlayerVictory()
     {
-        Debug.LogWarning("Victory");
-        Application.Quit();
+        SceneManager.LoadScene("VictoryScene");
     }
 
 }

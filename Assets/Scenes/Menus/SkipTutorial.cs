@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class StartMenuUI : MonoBehaviour
+public class SkipTutorial : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -11,17 +11,16 @@ public class StartMenuUI : MonoBehaviour
         
     }
 
-    
-    public void NewGame()
+    private void Update()
     {
-        Debug.Log("@");
-        SceneManager.LoadScene("Tutorial");
+        if (Input.GetButtonDown("Fire1"))
+        {
+            StartGame();
+        }
     }
 
-
-    public void Exit()
+    public void StartGame()
     {
-        Debug.Log("#");
-        Application.Quit();
+        SceneManager.LoadScene("FinalLevel");
     }
 }
