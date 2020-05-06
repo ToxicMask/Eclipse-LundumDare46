@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4816954731142282882}
   m_Layer: 0
-  m_Name: Esseltial
+  m_Name: Basic Level Kit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -273,16 +273,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4816954731142282882}
     m_Modifications:
-    - target: {fileID: 7125354317489051611, guid: 3078449238d66414aa209a638c19d9a7,
-        type: 3}
-      propertyPath: playerTransform
-      value: 
-      objectReference: {fileID: 8315628498859596185}
-    - target: {fileID: 7125354317489051611, guid: 3078449238d66414aa209a638c19d9a7,
-        type: 3}
-      propertyPath: rocketHomeTransform
-      value: 
-      objectReference: {fileID: 396703492605013308}
     - target: {fileID: 7125354318437121184, guid: 3078449238d66414aa209a638c19d9a7,
         type: 3}
       propertyPath: m_Camera

@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 8943624049896038124}
   m_Layer: 0
   m_Name: HomeShip
-  m_TagString: Untagged
+  m_TagString: HomeRocket
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

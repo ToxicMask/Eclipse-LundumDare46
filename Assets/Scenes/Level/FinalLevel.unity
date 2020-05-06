@@ -121,33 +121,13 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &1334550240
+--- !u!1001 &141287967
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 396703493233362237, guid: c41537d479cf6f3448d15217a57ef84e,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 396703493233362237, guid: c41537d479cf6f3448d15217a57ef84e,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 396703493233362237, guid: c41537d479cf6f3448d15217a57ef84e,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 396703493233362237, guid: c41537d479cf6f3448d15217a57ef84e,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 396703493892491846, guid: c41537d479cf6f3448d15217a57ef84e,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -166,7 +146,7 @@ PrefabInstance:
     - target: {fileID: 2065341847568661672, guid: c41537d479cf6f3448d15217a57ef84e,
         type: 3}
       propertyPath: m_Name
-      value: Esseltial
+      value: Basic Level Kit
       objectReference: {fileID: 0}
     - target: {fileID: 4816954731142282882, guid: c41537d479cf6f3448d15217a57ef84e,
         type: 3}

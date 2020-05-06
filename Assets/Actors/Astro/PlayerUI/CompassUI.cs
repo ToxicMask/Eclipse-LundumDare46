@@ -19,7 +19,9 @@ public class CompassUI : MonoBehaviour
 
         // Auto Get
         if (compassTransform == null) compassTransform = GetComponent<RectTransform>();
-        
+        if (playerTransform == null) playerTransform = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        if (rocketHomeTransform == null) rocketHomeTransform = GameObject.FindGameObjectWithTag("HomeRocket").GetComponent<Transform>();
+
     }
 
     // Update is called once per frame
