@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2932648743715838084}
   - component: {fileID: 3483378674024091838}
   - component: {fileID: 9047720108890696461}
+  - component: {fileID: 6447810315736665768}
   m_Layer: 0
   m_Name: Meteor
   m_TagString: Meteor
@@ -81,7 +82,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 1
+  m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!50 &3483378674024091838
 Rigidbody2D:
@@ -142,3 +143,15 @@ PolygonCollider2D:
       - {x: 0.5390625, y: -1.5625}
       - {x: 0.578125, y: -1.546875}
       - {x: 1.46593, y: -0.94856644}
+--- !u!114 &6447810315736665768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823776581315680902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d9ecdab618bf444a9401ec11d154485, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
