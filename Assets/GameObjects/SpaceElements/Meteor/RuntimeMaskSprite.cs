@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MeteorMaskSprite : MonoBehaviour
+public class RuntimeMaskSprite : MonoBehaviour
 {
     private void Awake()
     {
