@@ -11,14 +11,17 @@ public class AstroInv : MonoBehaviour
     private void Start()
     {
         // Auto Get
-        counterUI = GameObject.FindGameObjectWithTag("PlayerUI").GetComponentInChildren<ChipCounterUI>();
+
+        GameObject playerUI = GameObject.FindGameObjectWithTag("PlayerUI");
+
+        counterUI =  (playerUI != null) ? playerUI.GetComponentInChildren<ChipCounterUI>() : null;
     }
 
     public void AddChip()
     {
         currentShipChips++;
 
-        counterUI.UpdateChipValue(currentShipChips);
+        if (counterUI != null) counterUI.UpdateChipValue(currentShipChips);
     }
 
     public int GetChipCount()

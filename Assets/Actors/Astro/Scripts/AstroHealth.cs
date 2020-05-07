@@ -16,14 +16,15 @@ public class AstroHealth : MonoBehaviour
     void Start()
     {
         // Auto Get
+        GameObject playerUI = GameObject.FindGameObjectWithTag("PlayerUI");
 
-        airUI = GameObject.FindGameObjectWithTag("PlayerUI").GetComponentInChildren<AirSupplyUI>();
+        airUI = (playerUI != null ) ? playerUI.GetComponentInChildren<AirSupplyUI>() : null;
 
         // Set to max
         playerAir = maxAir;
 
         // Config Air UI
-        airUI.SetMaxAir(playerAir);
+        if (airUI != null) airUI.SetMaxAir(playerAir);
     }
 
     // Update is called once per frame
@@ -33,7 +34,7 @@ public class AstroHealth : MonoBehaviour
         LoseAir();
 
         // Update UI
-        airUI.SetAir(playerAir);
+        if (airUI != null) airUI.SetAir(playerAir);
 
         //Debug.Log(playerAir);
 
@@ -57,7 +58,7 @@ public class AstroHealth : MonoBehaviour
         RestoreAir();
 
         // Update UI
-        airUI.SetMaxAir(maxAir);
+        if (airUI != null) airUI.SetMaxAir(maxAir);
     }
 
     void Death()
