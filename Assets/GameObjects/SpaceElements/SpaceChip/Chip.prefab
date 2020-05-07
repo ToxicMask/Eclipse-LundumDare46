@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6119257775558927234}
   - component: {fileID: 6119257775558927233}
   - component: {fileID: 6119257775558927232}
+  - component: {fileID: 6776475939142124557}
   m_Layer: 0
   m_Name: Chip
   m_TagString: Untagged
@@ -82,7 +83,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 1
+  m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!58 &6119257775558927233
 CircleCollider2D:
@@ -110,6 +111,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4000818c80af67545964a5ddb58b97cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6776475939142124557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6119257775558927247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d9ecdab618bf444a9401ec11d154485, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &6119257776612490461

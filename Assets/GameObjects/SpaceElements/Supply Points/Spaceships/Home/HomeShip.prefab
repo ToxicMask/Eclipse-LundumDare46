@@ -27,7 +27,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.62, y: 0.06, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 8943624050364235173}
   m_Father: {fileID: 8943624049896038126}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -93,6 +94,7 @@ GameObject:
   - component: {fileID: 8943624049896038125}
   - component: {fileID: 8943624049896038115}
   - component: {fileID: 8943624049896038124}
+  - component: {fileID: 595636678454749459}
   m_Layer: 0
   m_Name: HomeShip
   m_TagString: HomeRocket
@@ -112,7 +114,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8943624049881474830}
-  - {fileID: 8943624050364235173}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -164,7 +165,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 1
+  m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &8943624049896038115
 MonoBehaviour:
@@ -281,6 +282,18 @@ PolygonCollider2D:
       - {x: -1.359375, y: -1.375}
       - {x: -1.2890625, y: -1.296875}
       - {x: -1.1328125, y: -1.3046875}
+--- !u!114 &595636678454749459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8943624049896038114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d9ecdab618bf444a9401ec11d154485, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8943624050364235172
 GameObject:
   m_ObjectHideFlags: 0
@@ -292,7 +305,7 @@ GameObject:
   - component: {fileID: 8943624050364235173}
   - component: {fileID: 8943624050364235174}
   m_Layer: 0
-  m_Name: LightMark (2)
+  m_Name: LightMark Aura
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -306,11 +319,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8943624050364235172}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.6, y: 0.06, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 1}
+  m_LocalPosition: {x: 0.066666596, y: 0, z: 0}
+  m_LocalScale: {x: 0.3333333, y: 0.3333333, z: 1}
   m_Children: []
-  m_Father: {fileID: 8943624049896038126}
-  m_RootOrder: 1
+  m_Father: {fileID: 8943624049881474830}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8943624050364235174
 SpriteRenderer:

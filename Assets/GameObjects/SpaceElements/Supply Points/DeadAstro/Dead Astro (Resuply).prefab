@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 4614399816102445439}
   - component: {fileID: 4614399816102445438}
   - component: {fileID: 4614399816102445437}
+  - component: {fileID: 4635067294791509293}
   m_Layer: 0
   m_Name: Dead Astro (Resuply)
   m_TagString: Untagged
@@ -163,7 +164,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 1
+  m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!58 &4614399816102445438
 CircleCollider2D:
@@ -191,5 +192,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 97bf747bbba754940b4e35e7396c138c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4635067294791509293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4614399816102445436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d9ecdab618bf444a9401ec11d154485, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
