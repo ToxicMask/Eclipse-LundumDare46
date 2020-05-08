@@ -5,8 +5,8 @@ using UnityEngine;
 [System.Serializable]
 public class ShipChip : PickableObject
 {
-
-    public static float airIncrease = 20;
+    // Universal air Increase
+    public static float airIncrease = 15;
 
     public static List<ShipChip> allInstances = new List<ShipChip>();
 
@@ -43,7 +43,7 @@ public class ShipChip : PickableObject
             astroAir.IncreaseMaxAir(airIncrease);
 
             // Increase Air Upgrade
-            airIncrease += 10;
+            airIncrease += 15;
         }
 
         // Ends Chip
