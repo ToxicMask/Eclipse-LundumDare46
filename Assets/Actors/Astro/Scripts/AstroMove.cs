@@ -41,6 +41,9 @@ public class AstroMove : MonoBehaviour
     {
         // Standard Movement
         FloatMovement();
+
+        // Deal with collision
+
     }
 
     void FloatMovement()
@@ -81,6 +84,15 @@ public class AstroMove : MonoBehaviour
 
         // Update Rigid Body
         rb2D.velocity = linearVelocity * Time.fixedDeltaTime;
+
+    }
+
+    //On collision
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        //Debug.Log("! -> " + collision.collider.name);
+
+        linearVelocity = Vector2.zero;
 
     }
 }
