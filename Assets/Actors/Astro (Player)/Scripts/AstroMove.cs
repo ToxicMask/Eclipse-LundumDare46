@@ -20,6 +20,8 @@ public class AstroMove : MonoBehaviour
     float maxSpeed = 128;
     float minSpeed = 4;
 
+    float bounceFactor = 0.3f;
+
     // Input Variables
     public Vector2 inputVector;
 
@@ -88,11 +90,13 @@ public class AstroMove : MonoBehaviour
     }
 
     //On collision
-    private void OnCollisionStay2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         //Debug.Log("! -> " + collision.collider.name);
 
-        linearVelocity = Vector2.zero;
+        Vector2 collisionNormal = collision.contacts[0].normal;
+
+        linearVelocity = Vector2.Reflect(linearVelocity, collisionNormal) * bounceFactor;
 
     }
 }
