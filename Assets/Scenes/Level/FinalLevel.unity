@@ -4115,21 +4115,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4816954731273690269}
     m_Modifications:
-    - target: {fileID: 8281634035837349227, guid: 776dd6afcac5d244eb1cc14985f13968,
-        type: 3}
-      propertyPath: maxAir
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 8281634035837349227, guid: 776dd6afcac5d244eb1cc14985f13968,
-        type: 3}
-      propertyPath: playerAir
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 8281634035837349227, guid: 776dd6afcac5d244eb1cc14985f13968,
-        type: 3}
-      propertyPath: loseAir
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8567627384042179362, guid: 776dd6afcac5d244eb1cc14985f13968,
         type: 3}
       propertyPath: m_LocalPosition.x

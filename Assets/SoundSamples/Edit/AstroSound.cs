@@ -6,18 +6,29 @@ public class AstroSound : MonoBehaviour
 {
 
     public AudioSource resuplySound;
+    public AudioSource jetBlowSound;
 
 
 
-    public void PlaySound() {
-        PlayResuplySound();
-    }
-
-
-    protected void PlayResuplySound()
+    public void PlayResuplySound()
     {
         if (resuplySound == null) return;
 
         resuplySound.Play();
+    }
+
+    public void PlayJetBlowSound(bool powerOn)
+    {
+        if (jetBlowSound == null) return;
+
+        if (powerOn && !jetBlowSound.isPlaying)
+        {
+            jetBlowSound.Play();
+        }
+        
+        else if ( !powerOn && jetBlowSound.isPlaying)
+        {
+            jetBlowSound.Stop();
+        }
     }
 }

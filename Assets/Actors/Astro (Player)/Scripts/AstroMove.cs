@@ -9,6 +9,7 @@ public class AstroMove : MonoBehaviour
 {
     // Components
     [SerializeField] Rigidbody2D rb2D;
+    [SerializeField] AstroSound astroSound;
 
     // Physycs Variables
     [SerializeField] Vector2 linearVelocity;
@@ -31,6 +32,7 @@ public class AstroMove : MonoBehaviour
 
         // Auto get
         rb2D = GetComponent<Rigidbody2D>();
+        astroSound = GetComponent<AstroSound>();
 
 
         // Reset Variables
@@ -62,6 +64,10 @@ public class AstroMove : MonoBehaviour
             
             // Clamp max speed
             linearVelocity = Vector2.ClampMagnitude(linearVelocity, maxSpeed);
+
+            // Control Sound - True
+            if (astroSound != null) astroSound.PlayJetBlowSound(true);
+
         }
 
         // Damp
@@ -72,6 +78,9 @@ public class AstroMove : MonoBehaviour
 
             // Set Dump
             linearVelocity -= (linearVelocity.normalized * floatDamp);
+
+            // Control Sound - False
+            if (astroSound != null) astroSound.PlayJetBlowSound(false);
         }
 
         // Full Stop
@@ -82,6 +91,10 @@ public class AstroMove : MonoBehaviour
 
             // Full Stop
             linearVelocity = Vector2.zero;
+
+            // Control Sound - False
+            if (astroSound != null) astroSound.PlayJetBlowSound(false);
+
         }
 
         // Update Rigid Body

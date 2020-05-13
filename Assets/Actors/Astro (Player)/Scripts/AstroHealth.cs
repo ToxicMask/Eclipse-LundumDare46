@@ -49,7 +49,7 @@ public class AstroHealth : MonoBehaviour
         playerAir = maxAir;
 
         // Play Sound
-        if (astroSound != null) astroSound.PlaySound() ;
+        if (astroSound != null) astroSound.PlayResuplySound() ;
     }
 
     void LoseAir()
