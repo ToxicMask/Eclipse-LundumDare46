@@ -11,14 +11,16 @@ public class AstroHealth : MonoBehaviour
 
     // Ui Component
     public AirSupplyUI airUI;
+    public AstroSound astroSound;
 
     // Start is called before the first frame update
     void Start()
     {
         // Auto Get
         GameObject playerUI = GameObject.FindGameObjectWithTag("PlayerUI");
-
         airUI = (playerUI != null ) ? playerUI.GetComponentInChildren<AirSupplyUI>() : null;
+
+        astroSound = GetComponent<AstroSound>();
 
         // Set to max
         playerAir = maxAir;
@@ -45,6 +47,9 @@ public class AstroHealth : MonoBehaviour
     public void RestoreAir()
     {
         playerAir = maxAir;
+
+        // Play Sound
+        if (astroSound != null) astroSound.PlaySound() ;
     }
 
     void LoseAir()
