@@ -4,5 +4,5 @@ using UnityEngine;
 
 public interface IExplosionContact 
 {
-    void ExplosionAffected();
+    void ExplosionAffect();
 }

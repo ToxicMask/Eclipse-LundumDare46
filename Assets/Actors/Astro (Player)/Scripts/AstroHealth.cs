@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class AstroHealth : MonoBehaviour
+public class AstroHealth : MonoBehaviour, IExplosionContact
 {
     [SerializeField] float maxAir = 80f;
     [SerializeField] float playerAir = 80f;
@@ -65,6 +65,14 @@ public class AstroHealth : MonoBehaviour
         // Update UI
         if (airUI != null) airUI.SetMaxAir(maxAir);
     }
+
+    public void ExplosionAffect()
+    {
+        // Remove Air
+        playerAir -= 30;
+
+    }
+
 
     void Death()
     {

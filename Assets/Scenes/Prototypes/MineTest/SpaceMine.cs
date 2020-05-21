@@ -14,7 +14,7 @@ public class SpaceMine : MonoBehaviour
 
         if (affectedBody != null)
         {
-            affectedBody.ExplosionAffected();
+            affectedBody.ExplosionAffect();
         }
 
         Destroy(gameObject);
